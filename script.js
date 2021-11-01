@@ -1,6 +1,6 @@
 document.body.innerHTML = `
 <div class="shadow">
-  <input class="field" id="question" type="text" placeholder="ENTER YOUR QUSETION">
+  <input class="field" id="question" type="text" placeholder="задати питання">
   <div class = "circle" onclick="RandAnswer();"><img class = "circleImg" src="img/rabbit.gif"></div>
   <div class="ans" id="predict"></div>
 </div>
@@ -14,7 +14,7 @@ const answers = [
 
 function RandAnswer(){
     if (document.getElementById("question").value == ""){
-        alert ( "Please fill in the field with a question to the magic ball" );
+        alert ( "Заповніть, будь-ласка, вище зазначене поле" );
         document.getElementById("question").style.background = "#ed37379e";
         }
         else{

@@ -13,10 +13,10 @@ body {
   position: relative;
   box-sizing: content-box;
   padding: 15px;
-  min-width: 850px;
-  min-height: 700px;
   border-radius: 1.5%;
   color: #3c763d;
+  width: 850px;
+  height: 700px;
   background: linear-gradient(0deg, #000, #221d59);
   text-align: center;
   justify-content: center;
@@ -117,5 +117,35 @@ body {
 @keyframes text {
   from{
     opacity: 0;
+  }
+}
+@media screen and (max-width: 992px){
+  .shadow{
+    margin: 20px auto 20px;
+    width: 850px;
+    height: 800px;
+  }
+  .field {
+    margin-top: 20px;
+    color: #d98536;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    text-align: center;
+    height: 40px;
+    width: 700px;
+  }
+  .circle{
+    width: 600px;
+    height: 600px;
+  }
+  .circleImg{
+    width: 375px;
+    height: 375px;
+  }
+  .answer{
+    font-size: 28px;
+  }
+  ::-webkit-input-placeholder {
+     font-size: 25px;
   }
 }

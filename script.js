@@ -11,21 +11,19 @@ const answers = [
 "Ні", "Звісно ні", "Не думаю, що це гарна ідея", "Не варто"];
 
 document.getElementById('crcl').onclick = function (){
-    let field = document.getElementById("question").value;
-    if (field == ""){
-        alert ( "Заповніть, будь-ласка, вище зазначене поле" );
+    if (document.getElementById("question").value == ""){
+        alert ("Заповніть, будь-ласка, вище зазначене поле");
         document.getElementById("question").style.background = "#ed37379e";
         }
-    else if (field.indexOf("?") == -1){
-        alert("Ви ввели не запитання))");
-      }
+    else if (document.getElementById("question").value.indexOf("?") == -1){
+        alert("Ви ввели не питання))\n Потрібно з '?'");
+        }
     else{
         document.getElementById("question").style.background = "#3d49828d";
         document.getElementById("predict").style.animation = "text 5s ease";
         let random = Math.floor(Math.random() * answers.length);
         document.getElementById("predict").innerHTML = answers[random];
-        let anim = document.getElementById('crcl');
-        anim.classList.add('shakeAnim');
-        setTimeout(function(){anim.classList.remove('shakeAnim');}, 1000);
+        document.getElementById('crcl').classList.add('shakeAnim');
+        setTimeout(function(){document.getElementById('crcl').classList.remove('shakeAnim');}, 1000);
       }
 }

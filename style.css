@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
-body{
+body {
  display: flex;
  justify-content: center;
  align-items: center;
@@ -42,7 +42,7 @@ body{
   0%, 100% {background-position: 0 0;}
   50% {background-position: 300% 0;}
 }
-.field{
+.field {
   margin-top: 20px;
   color: #d98536;
   font-family: 'Montserrat', sans-serif;
